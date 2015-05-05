@@ -8,7 +8,7 @@ import java.util.Properties;
 public class SentimentAnaTest {
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
     }
 }
